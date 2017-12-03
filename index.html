@@ -1,14 +1,217 @@
 <!DOCTYPE html>
 <html lang='en'>
 	<head>
-		<meta charset="utf-8">
-		<title>Hello World!</title>
-		<meta name='description' content='Experiment'>
-		<meta name='author' content='Michael Smith'>
-		<link rel='stylesheet' href='css/styles.css'>
+		<meta charset='utf-8' />
+		<title>Michael Smith - Enhanced CV</title>
+		<meta name='description' content='CV that demonstrates skills through design and linked information.' />
+		<meta name='keywords' content='HTML, CSS, Javascript' />
+		<meta name='author' content='Michael Smith' />
+		<!--For responsive design -->
+		<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+		<link rel='stylesheet' href='css/styles.css' />
 		<script src='js/scripts.js'></script>
 	</head>
 	<body>
-		<h1>Hello World!</h1>
+		<header>
+			<div id='info'>
+				<figure id='infoIcon'>
+				    <img src='img/information.png' alt='Information icon.'>
+    				<figcaption>A CV that also demonstrates many html, css and js concepts. I tried to get a balance of using a large variety of concepts and having it look decent. Also following best practices in most cases. As well as providing links to other works and information that helps to demonstrate other skills I have. Try resizing the window to see how it reacts.<br />Icon credit and license can be found <a href='https://en.wikipedia.org/wiki/File:Information.png' target='_blank'>here</a>.</figcaption>
+			    </figure>
+			</div>
+			<div id='mainHead'>
+				<img id='profilePic' src='img/profile_pic.jpg' alt='A photo of me.'>
+    	    	<h1 id='mainH1'>Michael Smith</h1>
+		    	<h2>Software Developer and Electronics Technician</h2>
+		    </div>
+		</header>
+		<nav>
+			<ul>
+				<li id="menuTitle">Project Links</li>
+				<li class="dropdown">
+					<a href="#">HTML, CSS, JS</a>
+					<div class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="#">Java</a>
+					<div class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="#">Ruby</a>
+					<div class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="#">Python</a>
+					<div class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="#">Other</a>
+					<div class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<main>
+			<section>
+				<h3>Personal Summary</h3>
+				<p>About me</p>
+			</section>
+			<section>
+			    <h3>Work Experience</h3>
+			    <!--The use of article here is somewhat questionable 
+			    	but mostly makes sense on it's own.-->
+				<article>
+				    <h4 class='article-h4'>Company 1 - Location</h4>
+				    JOB TITLE &emsp; Year - Year<br />
+				    Description<br />
+				    <h4 class='article-h4'>Duties:</h4>
+				    <ul>
+					    <li>Duty 1</li>
+					    <li>Duty 2</li>
+				    </ul>
+				</article>
+				<article>
+				    <h4 class='article-h4'>Company 2 - Location</h4>
+				    JOB TITLE &emsp; Year - Year<br />
+				    Description<br />
+				    <h4 class='article-h4'>Duties:</h4>
+				    <ul>
+					    <li>Duty 1</li>
+					    <li>Duty 2</li>
+				    </ul>
+				</article>
+			</section>
+			<section>
+				<h3>Key Skills</h3>
+				<ul>
+					<li>Skill 1 description</li>
+					<li>Skill 2 description</li>
+					<li>Skill 3 description</li>
+					<li>Skill 4 description</li>
+					<li>Skill 5 description</li>
+				</ul>
+			</section>
+			<section>
+				<h3>Education</h3>
+				Program 1<br />
+				Institute - Years<br />
+				Description<br />
+				<a href="#">Full details of courses and certificates</a>
+				<br /><br />
+				Program 2<br />
+				Institute - Years<br />
+				Description<br />
+				<br />
+				Program 3<br />
+				Institute - Years<br />
+				Description<br />
+			</section>
+			<section>
+				<h3>References</h3>
+				Available on request.<br />
+				<br />
+			</section>
+		</main>
+		<aside>
+			<section>
+		        <h3>Technical Skills</h3>
+		        <ul>
+		    	    <li>Skill 1</li>
+		    	    <li>Skill 2</li>
+		    	    <li>Skill 3</li>
+		    	    <li>Skill 4</li>
+		    	    <li>Skill 5</li>
+		        </ul>
+		    </section>
+		    <section>
+		        <h3>Certificates</h3>
+		        <ul>
+		    	    <li class="cert">
+		    	    	<div class="cert-text">
+		    	    		UC BerkeleyX - Software as a Service CS-169.1x
+		    	    	</div>
+	    	    		<div class="cert-popup">
+	    	    			<img src="img/certs/SaaS-CS169-1.jpg" alt="SaaS 169.1 Certificate" />
+	    	    		</div>
+		    	    </li>
+		    	    <li class="cert">
+		    	    	<div class="cert-text">
+		    	    		Cert 2
+		    	    	</div>
+	    	    		<div class="cert-popup">
+	    	    			<img src="" alt="" />
+	    	    		</div>
+		    	    </li>
+		    	    <li class="cert">
+		    	    	<div class="cert-text">
+		    	    		Cert 3
+		    	    	</div>
+	    	    		<div class="cert-popup">
+	    	    			<img src="" alt="" />
+	    	    		</div>
+		    	    </li>
+		    	    <li class="cert">
+		    	    	<div class="cert-text">
+		    	    		Cert 4
+		    	    	</div>
+	    	    		<div class="cert-popup">
+	    	    			<img src="" alt="" />
+	    	    		</div>
+		    	    </li>
+		    	    <li class="cert">
+		    	    	<div class="cert-text">
+		    	    		Cert 5
+		    	    	</div>
+	    	    		<div class="cert-popup">
+	    	    			<img src="" alt="" />
+	    	    		</div>
+		    	    </li>
+		        </ul>
+		    </section>
+		    <section>
+		        <h3>Personal Skills</h3>
+		        <ul>
+		    	    <li>Skill 1</li>
+		    	    <li>Skill 2</li>
+		    	    <li>Skill 3</li>
+		    	    <li>Skill 4</li>
+		    	    <li>Skill 5</li>
+		        </ul>
+		    </section>
+		    <section>
+		        <h3>Personal Details</h3>
+		        <!-- Name, Address, Phone, Email, Other Info -->
+		        Michael Smith<br />
+		        <br />
+		        <address>
+		        	123 Some Street<br />
+		        	Some City, Some State<br />
+		        	Some Country<br />
+		        	Some Zip<br />
+		        </address>
+		    </section>
+		</aside>
+		<footer>
+			Created by Michael Smith.
+		</footer>
 	</body>
 </html>

@@ -1,3 +1,153 @@
-h1 {
-	color: blue;
+body {
+	/* margin and max-width to avoid long lines */
+	margin: auto;
+	max-width: 1200px;
+	/* min-width to keep H1, H2 and nav positioned
+	properly, this could break if text was changed */
+	min-width: 768px;
+	background-color: ivory;
+}
+/* Info icon with popup figcaption */
+#info {
+	float: left;
+}
+#infoIcon {
+	margin: 0;
+}
+#infoIcon img{
+	width: 40px;
+}
+#infoIcon figcaption {
+	/* hide fig4caption unless hover */
+	display: none;
+}
+#infoIcon:hover img{
+	opacity: 0.5;
+}
+#infoIcon:hover figcaption{
+	display: block;
+	position: absolute;
+	background-color: tan;
+	width: 350px;
+	padding: 20px;
+	font-size: 1.2em;
+}
+header h1, h2 {
+	float: left;
+	clear: left;
+}
+#mainHead {
+	min-width: 700px;
+}
+#profilePic {
+	width: 150px;
+	padding:10px;
+	float: right;
+}
+#mainH1 {
+	margin-bottom: 0;
+}
+#mainH1, h3 {
+	color: firebrick;
+}
+#mainHead, main, nav {
+	width: 75%;
+	float: right;
+}
+/* Setup the look of the nav and hover effect */
+nav {
+	padding-left: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: wheat;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+nav li {
+	float: left;
+	font-weight: bold;
+}
+#menuTitle {
+	padding: 14px;
+}
+nav .dropdown a {
+	display: block;
+	text-decoration: none;
+	padding: 14px;
+	margin: 0px 2px;
+	color: firebrick;
+	background-color: beige;
+}
+nav .dropdown a:hover, nav .dropdown:hover>a {
+	background-color: ivory;
+}
+/* Setup the effect of the dropdowns */
+nav .dropdown-content {
+	display: none;
+	position: absolute;
+	box-shadow: 8px 8px 16px 0px tan;
+	min-width: 150px;
+	z-index: 1;
+}
+nav .dropdown:hover .dropdown-content {
+	display: block;
+}
+main {
+	padding-left: 20px;
+	background-color: beige;
+}
+main h3 {
+	background-color: wheat;
+}
+h4 {
+	font-style: italic;
+}
+.article-h4 {
+	margin-bottom: 0;
+}
+article ul {
+	margin-top: 0;
+}
+aside h3 {
+	background-color: beige;
+}
+aside {
+	width: 20%;
+	float: left;
+	background-color: wheat;
+}
+aside ul {
+	padding-left: 10px;
+	list-style-type: none;
+}
+aside ul li {
+	margin-bottom: 10px;
+	font-style: italic;
+}
+/* Cert popups */
+.cert-popup {
+	width: 640px;
+	display: none;
+}
+.cert:hover {
+	background-color: beige;
+}
+.cert:hover .cert-popup {
+	display: block;
+	position: relative;
+	top: -200px;
+	left: 250px;
+}
+.cert:hover img {
+	width: 100%;
+	position: absolute;
+}
+footer {
+	clear: both;
+	padding: 10px;
+	background-color: wheat;
+	text-align: center;
 }

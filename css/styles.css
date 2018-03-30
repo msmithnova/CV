@@ -31,6 +31,7 @@ body {
 	width: 350px;
 	padding: 20px;
 	font-size: 1.2em;
+	z-index: 1;
 }
 header h1, h2 {
 	float: left;
@@ -72,6 +73,31 @@ nav li {
 }
 #menuTitle {
 	padding: 14px;
+	position: relative;
+}
+/* This popup done slightly different than the info one. */
+#menuTooltip {
+	visibility: hidden;
+	width: 200px;
+	padding: 14px;
+	border-radius: 5px;
+	background-color: tan;
+	text-align: center;
+	position: absolute;
+	top: 100%;
+	left: -50px;
+}
+#menuTitle:hover #menuTooltip {
+	visibility: visible;
+}
+#menuTitle::after {
+	content: " ";
+	position: absolute;
+	left: 50%;
+	margin-left: -8px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: tan transparent transparent transparent;
 }
 nav .dropdown a {
 	display: block;
@@ -125,7 +151,6 @@ aside ul {
 }
 aside ul li {
 	margin-bottom: 10px;
-	font-style: italic;
 }
 /* Cert popups */
 .cert-popup {
@@ -139,7 +164,7 @@ aside ul li {
 	display: block;
 	position: relative;
 	top: -200px;
-	left: 250px;
+	left: 200px;
 }
 .cert:hover img {
 	width: 100%;
